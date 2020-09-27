@@ -1,7 +1,9 @@
 // ==========================================
 // 1. Maak een for-loop die 3 keer "Hoera!" in de console logt
 // ==========================================
-
+for(let i=0; i<3; i++){
+    console.log("Hoera!");
+}
 
 // ==========================================
 // 2. Maak een for-loop die van 0 tot 9 loopt en de getallen 0 tot 9 logt.
@@ -19,6 +21,15 @@
 // >> 9
 // ==========================================
 
+for(let i=0; i<10; i++){
+    if( i >= 6){
+        console.log(`>>${i}`);
+    }else if(i >= 3){
+        console.log(`>${i}`);
+    }else {
+        console.log(i);
+    }
+}
 
 // ==========================================
 // 3. Maak een for-loop die van 0 tot 15 loopt. Voor ieder getal wordt in de console gelogd of het getal even of oneven is.
@@ -34,3 +45,6 @@
 // hier bestaat een speciale operator voor
 // ==========================================
 
+for(let i=0; i<15; i++){
+    i % 2 === 0 ?  console.log(`${i} is even`) : console.log(`${i} is oneven`);
+}
